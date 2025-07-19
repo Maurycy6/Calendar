@@ -33,15 +33,17 @@
             </div>
 
             <!-- calendar section -->
-            <div class="calendar">
-                <div class="nav-btn-container">
-                    <button class="nav-btn" onclick="">
-                        <i class="fa-solid fa-backward"></i>
-                    </button>
-                    <h2 id="monthYear" style="margin: 0"></h2>
-                    <button class="nav-btn" onclick="">
-                        <i class="fa-solid fa-forward"></i>
-                    </button>
+            <div id="calendarContainer">
+                <div class="calendar">
+                    <div class="nav-btn-container">
+                        <button class="nav-btn" onclick="">
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+                        <h2 id="monthYear" style="margin: 0"></h2>
+                        <button class="nav-btn" onclick="">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="calendar-grid" id="calendar"></div>
