@@ -1,10 +1,67 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../font/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf');
+}
+
 :root {
     --primary: #3b82f6;
     --primary-light: #dbeafe;
     --primary-dark: #1E3A8A;
-    --background: #F9FAFB;
+    --background: #f0f0f0;
     --success: #d1fae5;
     --success-text: #065f46;
     --error: #fee2e2;
     --error-text: #b91c1c;
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', monospace;
+    color: #333;
+    font-size: 1.6rem;
+}
+#bodyContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 3.2rem 1.6rem;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-size: 3.2rem;
+    font-weight: 800;
+    padding: 1.6rem;
+    letter-spacing: 0.2rem;
+    border-bottom: 0.2rem solid var(--primary);
+}
+
+@media (max-width: 768px) {
+    .clock-container {
+        font-size: 2rem;
+        padding: 1rem;
+    }
 }
